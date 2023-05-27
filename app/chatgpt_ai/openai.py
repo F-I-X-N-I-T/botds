@@ -11,7 +11,7 @@ def chatgpt_response(prompt):
         model="text-davinci-003",
         prompt=prompt,
         temperature=1,
-        max_tokens=125,
+        max_tokens=200,
     )
     response_dict = response.get("choices")
     if response_dict and len(response_dict) > 0:
